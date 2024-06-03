@@ -117,6 +117,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(249, 231, 213, 255);
+    overflow: hidden;
 }
 
 .second {
@@ -198,9 +199,11 @@ body {
     .right, .left {
         width: 90%;
         margin-left: 0;
-        margin-top: 10px; /* Add margin to adjust button positions */
+        margin-top: -5px; /* Add margin to adjust button positions */
     }
-
+    .left {
+        order: 1; /* Make left section come first */
+    }
     .board {
         grid-template-columns: repeat(8, 8vw);
         grid-template-rows: repeat(8, 8vw);
