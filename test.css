@@ -220,7 +220,7 @@ body {
     }
 
     .right, .left {
-        margin-top: 10px; /* Add margin to adjust button positions */
+        margin-top: -20px; /* Add margin to adjust button positions */
     }
 
     .tank_opponent, .tank_myside, .canon, .titan_blue, .titan_red {
