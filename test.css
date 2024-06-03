@@ -1,4 +1,5 @@
 /* Existing CSS */
+/* Existing CSS */
 .square {
     display: flex;
     flex-direction: row;
@@ -117,6 +118,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(249, 231, 213, 255);
+    overflow: hidden; /* Prevent scrolling */
+    margin: 0; /* Remove default margin */
 }
 
 .second {
@@ -193,34 +196,38 @@ body {
     .second {
         flex-direction: column;
         align-items: center;
+        padding-top: 10px; /* Add padding to top */
     }
 
     .right, .left {
         width: 90%;
         margin-left: 0;
+        margin-top: 5px; /* Adjust margin to fit content */
+    }
+
+    .left {
+        order: 1; /* Make left section come first */
     }
 
     .board {
         grid-template-columns: repeat(8, 8vw);
         grid-template-rows: repeat(8, 8vw);
+        margin-top: 10px; /* Add margin to adjust board position */
     }
 
     .button-play {
         width: 120px;
         padding: 10px 20px;
         font-size: 14px; /* Reduce button font size */
+        margin-top: 5px; /* Adjust button position */
     }
 
     .left img {
-        margin-top: 0;
+        margin-top: 0; /* Reset image position */
     }
 
     button {
         font-size: 14px; /* Reduce global button font size */
-    }
-
-    .right, .left {
-        margin-top: -20px; /* Add margin to adjust button positions */
     }
 
     .tank_opponent, .tank_myside, .canon, .titan_blue, .titan_red {
